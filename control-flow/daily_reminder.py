@@ -35,7 +35,7 @@ priority = input("Enter the task's priority (high, medium, low): ").strip().lowe
 time_bound = input("Is the task time-bound? (yes or no): ").strip().lower()
 
 # Provide a customized reminder based on the priority and time sensitivity
-reminder = f"Reminder: {task} (Priority: {priority.capitalize()})"
+reminder = f"{task} (Priority: {priority.capitalize()})"
 
 # Use a Match Case statement to handle different priorities
 match priority:
@@ -55,6 +55,6 @@ match priority:
         reminder = "Invalid priority level provided."
 
 # Print the reminder
-print(reminder)
+print("Reminder: ",reminder)
 
 
